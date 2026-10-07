@@ -37,6 +37,7 @@ esac
 node_ok || { echo "Node.js 20.19+ or 22.12+ is required, and it could not be installed."; exit 1; }
 echo "Using Node $(node -v) and npm $(npm -v)"
 
+[ -f package.json ] || { echo "package.json not found. Run this script from the repo folder after cloning."; exit 1; }
 if [ -f package-lock.json ]; then npm ci; else npm install; fi || exit 1
 
 echo
