@@ -1,6 +1,4 @@
-# ASiPSS Frontend
 
-React + Vite + JavaScript.
 
 ## First-time setup (once per computer)
 
